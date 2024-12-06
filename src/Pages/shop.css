@@ -1,0 +1,15 @@
+.banner{
+    justify-self:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 164px;
+    color: black;
+    height: 60vh;
+    width: 100%;
+    align-self: center;
+    background-image:url("../assets/Images/shop.jpg");
+    background-size: cover;
+    background-position:right;
+    font-family:"Clicker Script",cursive;
+  }
