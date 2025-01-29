@@ -29,11 +29,6 @@ export default function Product() {
           "?limit=4"
       ) //second api
       .then((response) => {
-        console.log(response.data, "relatedproducts");
-        console.log(product);
-        console.log(
-          "request https://dummyjson.com/products/category/" + product?.category
-        );
         setRelated(response.data.products);
         setTimeout(() => {
           setLoading(false);
