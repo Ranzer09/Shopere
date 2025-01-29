@@ -10,7 +10,6 @@ import StarIcon from "@mui/icons-material/Star";
 import { Link } from "react-router-dom";
 
 export default function RelatedProducts({ product, setLoading }) {
-  console.log(product.id, "relatedproduct hit here");
   return (
     <Card
       sx={{
