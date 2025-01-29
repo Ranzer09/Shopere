@@ -11,7 +11,7 @@ import React, { useEffect, useState } from "react";
 import RelatedProducts from "./RelatedProducts";
 import ProductCard from "../Components/ProductCard";
 
-export default function ProductDetails({ product, related }) {
+export default function ProductDetails({ product, related,setLoading }) {
   const [current, setCurrent] = useState(0);
   const [showReview, setShowReview] = useState(null);
 
@@ -263,7 +263,7 @@ export default function ProductDetails({ product, related }) {
         <Grid2 container spacing={2}>
           {related?.map((product, index) => (
             <Grid2 size={{ xs: 12, sm: 4, md: 3 }}>
-              <RelatedProducts key={index} product={product} />
+              <RelatedProducts key={index} product={product} setLoading={setLoading} />
             </Grid2>
           ))}
         </Grid2>
