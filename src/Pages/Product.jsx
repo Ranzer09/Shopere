@@ -52,7 +52,7 @@ export default function Product() {
           <CircularProgress size={30} /> Fetching your product
         </Box>
       ) : (
-        <ProductDetails product={product} related={filteredRelatedProducts} />
+        <ProductDetails product={product} setLoading={setLoading} related={filteredRelatedProducts} />
       )}
     </>
   );
