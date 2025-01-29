@@ -16,7 +16,6 @@ export default function Shop() {
     axios
       .get("https://dummyjson.com/products")
       .then((response) => {
-        console.log(response.data.products);
         setProducts(response.data.products);
         setTimeout(() => {
           setLoading(false);
@@ -32,7 +31,6 @@ export default function Shop() {
     axios
       .get(`https://dummyjson.com/products/search?q=${e.target.value}`)
       .then((response) => {
-        console.log(response.data.products);
         setProducts(response.data.products);
         setTimeout(() => {
           setLoading(false);
